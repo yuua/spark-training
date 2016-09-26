@@ -9,7 +9,7 @@ import org.apache.spark.{SparkConf,SparkContext}
 object BasicWordCount {
 
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf.setAppName("Basic Word Count")
+    val conf = new SparkConf().setAppName("Basic Word Count")
     val sc = new SparkContext(conf)
 
     val textFile = sc.textFile("$SPARK_HOME/README.md") // 書籍に合わせる
