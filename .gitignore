@@ -1,2 +1,4 @@
 .idea
 .iml
+ruby/itunes/vendor/bundle
+ruby/itunes/.bundle

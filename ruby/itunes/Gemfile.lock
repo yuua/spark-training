@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bson (1.12.5)
+    bson_ext (1.12.5)
+      bson (~> 1.12.5)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
+    itunes-search-api (0.1.0)
+      httparty
+    mongo (1.12.5)
+      bson (= 1.12.5)
+    multi_xml (0.5.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bson_ext
+  itunes-search-api
+  mongo
+
+BUNDLED WITH
+   1.10.6
