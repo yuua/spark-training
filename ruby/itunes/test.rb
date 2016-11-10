@@ -2,7 +2,7 @@ require 'mongo'
 require './config/config'
 
 connect = Mongo::Connection.new(MONGO_CONNECT)
-db = connect.db('test_data')
-collect = db.collection('movie_data')
+db = connect.db(DB)
+collect = db.collection(COLLECTION)
 
 puts collect.find_one
