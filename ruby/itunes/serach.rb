@@ -16,5 +16,5 @@ ITunesSearchAPI.search(
   lang: "ja_jp",
 #   limit: "100"
 ).each do |item|
-  puts "#{word} #{item["artistName"]} #{item["trackName"].gsub(/\s/,"")} #{item["trackCensoredName"].gsub(/\s/,"")} #{item["artworkUrl60"]} #{item["longDescription"].gsub(/\s/,"")}"
+  puts "#{word}\t#{item["artistName"]}\t#{item["trackName"]}\t#{item["trackCensoredName"]}\t#{item["artworkUrl60"]}\t#{item["longDescription"].gsub(/\n/,"")}"
 end
